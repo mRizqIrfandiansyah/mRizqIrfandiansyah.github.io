@@ -50,8 +50,8 @@ body{
 	top:0;
 	left: 0;
 	visibility: hidden; /* hides sub-menu */	
-	transform: translateY(100%);
-	transition: 0.5s , visibility 0s linear 0.5s;
+	transform: translateY(-100%);
+	transition: 0.3s , visibility 0s linear 0.3s;
 }
 .show{
 	visibility: visible;
