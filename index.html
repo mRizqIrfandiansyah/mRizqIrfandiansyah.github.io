@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="icon" href="img/logo.png" />
-	<title>Selamat Datang !</title>
+	<title>M. Rizqi Irfandiansyah</title>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script type="text/javascript" src="js/interaksi.js"></script>
@@ -15,29 +15,34 @@
 	<div class="container home">
 		<div class="nav">
 			<ul >
+				<div onclick="tutup_navbar('content-home')"><i class="fa fa-times"></i></div>
 				<li onclick="buka('.home',this)">Tentang Saya</li>
 				<li onclick="buka('.pendidikan',this)">Pendidikan</li>
 				<li onclick="buka('.Kemampuan',this)">Kemampuan</li>
 				<li onclick="buka('.pengalaman',this)">Pengalaman</li>
 				<li onclick="buka('.projek',this)">Projek</li>
 			</ul>
-		</div>	
-		<div class="home-row">
-			<div class="home-side">
-				<div class="home-logo">
-					<img src="img/logo.png" width="190">
-				</div>
-				<div>
-					<font size="24pt">
-						Mukhammad Rizqi Irfandiansyah
-					</font>
-				</div>
+		</div>
+		<div class="content" id="content-home">
+			<div class="bar">
+				<div onclick="buka('.home',this)">M. Rizqi Irfandiansyah</div> 
+				<i class="fa fa-bars" onclick="buka_navbar(this)"></i>
 			</div>
-			<div class="home-content">
-				Saya seorang pelajar informatika yang tertarik dengan web development.
-				Berawal dari minat tentang ilmu design, saya mencoba menggabungkan 
-				hasil studi saya dengan minat saya. Sampai ketemulah minat saya 
-				dengan bidang front-end web. 
+			<div class="home-row">
+				<div class="home-side">
+					<div class="home-logo">
+						<img src="img/logo.png" width="190">
+					</div>
+					<div class="home-font">
+						Mukhammad Rizqi Irfandiansyah	
+					</div>
+				</div>
+				<div class="home-content">
+					Saya seorang pelajar informatika yang tertarik dengan web development.
+					Berawal dari minat tentang ilmu design, saya mencoba menggabungkan 
+					hasil studi saya dengan minat saya. Sampai ketemulah minat saya 
+					dengan bidang front-end web. 
+				</div>	
 			</div>	
 		</div>	
 	</div>
@@ -46,6 +51,7 @@
 	<div class="container pendidikan">
 		<div class="nav">
 			<ul >
+				<div onclick="tutup_navbar('content-pendidikan')"><i class="fa fa-times"></i></div>
 				<li onclick="buka('.home',this)">Tentang Saya</li>
 				<li onclick="buka('.pendidikan',this)">Pendidikan</li>
 				<li onclick="buka('.Kemampuan',this)">Kemampuan</li>
@@ -53,54 +59,60 @@
 				<li onclick="buka('.projek',this)">Projek</li>
 			</ul>
 		</div>
-		<div class="submenu-header">
-			Pendidikan
-		</div>
-		<div class="submenu-content">
-			<div class="submenu-container">
-				<div class="submenu-title">
-					2004 - 2010
-				</div>
-				<div class="submenu-ikon">
-					<i class="fa fa-graduation-cap"></i>
-				</div>
-				<div class="submenu-footer">
-					SDN 1 Buring Malang
-				</div>
+		<div class="content" id="content-pendidikan">
+			<div class="bar">
+				<div onclick="buka('.home',this)">M. Rizqi Irfandiansyah</div> 
+				<i class="fa fa-bars" onclick="buka_navbar(this)"></i>
 			</div>
-			<div class="submenu-container">
-				<div class="submenu-title">
-					2010 - 2013
-				</div>
-				<div class="submenu-ikon">
-					<i class="fa fa-graduation-cap"></i>
-				</div>
-				<div class="submenu-footer">
-					SMPN 10 Malang
-				</div>
+			<div class="submenu-header">
+				Pendidikan
 			</div>
-			<div class="submenu-container">
-				<div class="submenu-title">
-					2013 - 2016
+			<div class="submenu-content">
+				<div class="submenu-container">
+					<div class="submenu-title">
+						2004 - 2010
+					</div>
+					<div class="submenu-ikon">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+					<div class="submenu-footer">
+						SDN 1 Buring Malang
+					</div>
 				</div>
-				<div class="submenu-ikon">
-					<i class="fa fa-graduation-cap"></i>
+				<div class="submenu-container">
+					<div class="submenu-title">
+						2010 - 2013
+					</div>
+					<div class="submenu-ikon">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+					<div class="submenu-footer">
+						SMPN 10 Malang
+					</div>
 				</div>
-				<div class="submenu-footer">
-					SMKN 2 Singosari <br>
-					MULTIMEDIA 
+				<div class="submenu-container">
+					<div class="submenu-title">
+						2013 - 2016
+					</div>
+					<div class="submenu-ikon">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+					<div class="submenu-footer">
+						SMKN 2 Singosari <br>
+						MULTIMEDIA 
+					</div>
 				</div>
-			</div>
-			<div class="submenu-container">
-				<div class="submenu-title">
-					2016 - Sekarang
-				</div>
-				<div class="submenu-ikon">
-					<i class="fa fa-school"></i>
-				</div>
-				<div class="submenu-footer">
-					Universitas Negeri Malang <br>	
-					S1 Teknik Informatika
+				<div class="submenu-container">
+					<div class="submenu-title">
+						2016 - Sekarang
+					</div>
+					<div class="submenu-ikon">
+						<i class="fa fa-school"></i>
+					</div>
+					<div class="submenu-footer">
+						Universitas Negeri Malang <br>	
+						S1 Teknik Informatika
+					</div>
 				</div>
 			</div>
 		</div>
@@ -110,6 +122,7 @@
 	<div class="container Kemampuan">
 		<div class="nav">
 			<ul >
+				<div onclick="tutup_navbar('content-Kemampuan')"><i class="fa fa-times"></i></div>
 				<li onclick="buka('.home',this)">Tentang Saya</li>
 				<li onclick="buka('.pendidikan',this)">Pendidikan</li>
 				<li onclick="buka('.Kemampuan',this)">Kemampuan</li>
@@ -117,40 +130,46 @@
 				<li onclick="buka('.projek',this)">Projek</li>
 			</ul>
 		</div>
-		<div class="submenu-header">
-			Kemampuan
-		</div>
-		<div class="submenu-content">
-			<div class="submenu-container">
-				<div class="submenu-title">
-					HTML
-				</div>
-				<div class="submenu-ikon">
-					80%
-				</div>
+		<div class="content" id="content-Kemampuan">
+			<div class="bar">
+				 <div onclick="buka('.home',this)">M. Rizqi Irfandiansyah</div> 
+				<i class="fa fa-bars" onclick="buka_navbar(this)"></i>
 			</div>
-			<div class="submenu-container">
-				<div class="submenu-title">
-					CSS
-				</div>
-				<div class="submenu-ikon">
-					80%
-				</div>
+			<div class="submenu-header">
+				Kemampuan
 			</div>
-			<div class="submenu-container">
-				<div class="submenu-title">
-					JavaScript
+			<div class="submenu-content">
+				<div class="submenu-container">
+					<div class="submenu-title">
+						HTML
+					</div>
+					<div class="submenu-ikon">
+						80%
+					</div>
 				</div>
-				<div class="submenu-ikon">
-					60%
+				<div class="submenu-container">
+					<div class="submenu-title">
+						CSS
+					</div>
+					<div class="submenu-ikon">
+						80%
+					</div>
 				</div>
-			</div>
-			<div class="submenu-container">
-				<div class="submenu-title">
-					PHP
+				<div class="submenu-container">
+					<div class="submenu-title">
+						JavaScript
+					</div>
+					<div class="submenu-ikon">
+						60%
+					</div>
 				</div>
-				<div class="submenu-ikon">
-					35%
+				<div class="submenu-container">
+					<div class="submenu-title">
+						PHP
+					</div>
+					<div class="submenu-ikon">
+						35%
+					</div>
 				</div>
 			</div>
 		</div>
@@ -160,6 +179,7 @@
 	<div class="container pengalaman">
 		<div class="nav">
 			<ul >
+				<div onclick="tutup_navbar('content-pengalaman')"><i class="fa fa-times"></i></div>
 				<li onclick="buka('.home',this)">Tentang Saya</li>
 				<li onclick="buka('.pendidikan',this)">Pendidikan</li>
 				<li onclick="buka('.Kemampuan',this)">Kemampuan</li>
@@ -167,30 +187,36 @@
 				<li onclick="buka('.projek',this)">Projek</li>
 			</ul>
 		</div>
-		<div class="submenu-header">
-			Pengalaman
-		</div>
-		<div class="submenu-content">
-			<div class="submenu-container">
-				<div class="submenu-title">
-					2013 - 2014
-				</div>
-				<div class="submenu-ikon">
-					<i class="fa fa-pencil-ruler"></i>
-				</div>
-				<div class="submenu-footer">
-					Operator & Designer <br> Digital Printing
-				</div>
+		<div class="content" id="content-pengalaman">
+			<div class="bar">
+				 <div onclick="buka('.home',this)">M. Rizqi Irfandiansyah</div> 
+				<i class="fa fa-bars" onclick="buka_navbar(this)"></i>
 			</div>
-			<div class="submenu-container">
-				<div class="submenu-title">
-					2015
+			<div class="submenu-header">
+				Pengalaman
+			</div>
+			<div class="submenu-content">
+				<div class="submenu-container">
+					<div class="submenu-title">
+						2013 - 2014
+					</div>
+					<div class="submenu-ikon">
+						<i class="fa fa-pencil-ruler"></i>
+					</div>
+					<div class="submenu-footer">
+						Operator & Designer <br> Digital Printing
+					</div>
 				</div>
-				<div class="submenu-ikon">
-					<i class="fa fa-paint-brush"></i>
-				</div>
-				<div class="submenu-footer">
-					Magang Designer <br> Digital Printing
+				<div class="submenu-container">
+					<div class="submenu-title">
+						2015
+					</div>
+					<div class="submenu-ikon">
+						<i class="fa fa-paint-brush"></i>
+					</div>
+					<div class="submenu-footer">
+						Magang Designer <br> Digital Printing
+					</div>
 				</div>
 			</div>
 		</div>
@@ -200,6 +226,7 @@
 	<div class="container projek">
 		<div class="nav">
 			<ul >
+				<div onclick="tutup_navbar('content-projek')"><i class="fa fa-times"></i></div>
 				<li onclick="buka('.home',this)">Tentang Saya</li>
 				<li onclick="buka('.pendidikan',this)">Pendidikan</li>
 				<li onclick="buka('.Kemampuan',this)">Kemampuan</li>
@@ -207,44 +234,50 @@
 				<li onclick="buka('.projek',this)">Projek</li>
 			</ul>
 		</div>
-		<div class="submenu-header">
-			Projek
-		</div>
-		<div class="submenu-content">
-			<div class="portofolio-bg" style="background-image: url('img/rs_bg.png')">
-				<div class="portofolio-content">
-					<div class="portofolio-logo">
-						<img src="img/rs_lg.png" >
-					</div>
-					<div class="portofolio-title">
-						E - Commerce <br>
-						Souvenir
-					</div>
-					<a href="https://rumahsuvenir.000webhostapp.com" target="_blank" class="portofolio-btn" style="background-color: red">lihat</a>
-				</div>
+		<div class="content" id="content-projek">
+			<div class="bar">
+				 <div onclick="buka('.home',this)">M. Rizqi Irfandiansyah</div> 
+				<i class="fa fa-bars" onclick="buka_navbar(this)"></i>
 			</div>
-			<div class="portofolio-bg" style="background-image: url('img/rf_bg.png')">
-				<div class="portofolio-content">
-					<div class="portofolio-logo">
-						<img src="img/rf_lg.png" >
-					</div>
-					<div class="portofolio-title">
-						E - Commerce <br>
-						Reksadana 
-					</div>
-					<a href="https://reksafunds.000webhostapp.com" target="_blank" class="portofolio-btn" style="background-color: green">lihat</a>
-				</div>
+			<div class="submenu-header">
+				Projek
 			</div>
-			<div class="portofolio-bg" style="background-image: url('img/sl_bg.png')">
-				<div class="portofolio-content">
-					<div class="portofolio-logo">
-						<img src="img/sl_lg.png" >
+			<div class="submenu-content">
+				<div class="portofolio-bg" style="background-image: url('img/rs_bg.png')">
+					<div class="portofolio-content">
+						<div class="portofolio-logo">
+							<img src="img/rs_lg.png" >
+						</div>
+						<div class="portofolio-title">
+							E - Commerce <br>
+							Souvenir
+						</div>
+						<a href="https://rumahsuvenir.000webhostapp.com" target="_blank" class="portofolio-btn" style="background-color: red">lihat</a>
 					</div>
-					<div class="portofolio-title">
-						E - Learning <br>
-						Sosiologi
+				</div>
+				<div class="portofolio-bg" style="background-image: url('img/rf_bg.png')">
+					<div class="portofolio-content">
+						<div class="portofolio-logo">
+							<img src="img/rf_lg.png" >
+						</div>
+						<div class="portofolio-title">
+							E - Commerce <br>
+							Reksadana 
+						</div>
+						<a href="https://reksafunds.000webhostapp.com" target="_blank" class="portofolio-btn" style="background-color: green">lihat</a>
 					</div>
-					<a href="https://sosio-learn.000webhostapp.com" target="_blank" class="portofolio-btn" style="background-color: blue">lihat</a>
+				</div>
+				<div class="portofolio-bg" style="background-image: url('img/sl_bg.png')">
+					<div class="portofolio-content">
+						<div class="portofolio-logo">
+							<img src="img/sl_lg.png" >
+						</div>
+						<div class="portofolio-title">
+							E - Learning <br>
+							Sosiologi
+						</div>
+						<a href="https://sosio-learn.000webhostapp.com" target="_blank" class="portofolio-btn" style="background-color: blue">lihat</a>
+					</div>
 				</div>
 			</div>
 		</div>

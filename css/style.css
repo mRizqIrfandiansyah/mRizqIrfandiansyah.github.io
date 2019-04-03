@@ -5,10 +5,23 @@
 body{
 	font-family: 'cooltevica';
 }
+.bar{
+	display: none;
+	padding: 20px;
+	background-color: white;
+	font-size: 24pt;
+}
+.bar i{
+	cursor: pointer;
+}
+.show-nav{
+	transform: translateX(-200px) !important;
+	transition-delay: 0s
+}
 .home-row{
 	display: flex;
-	justify-content: flex-start;
-	height: 90%
+	height: 90%;
+	background-color: white;
 }
 .home-side{
 	text-align: center;
@@ -16,10 +29,12 @@ body{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	
 }
 .home-logo{
 	text-align: center
+}
+.home-font{
+	font-size: 36pt;
 }
 .home-content{
 	flex:2;
@@ -34,6 +49,7 @@ body{
 	list-style: none;
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 .nav ul li{
 	padding: 10px;
@@ -42,6 +58,12 @@ body{
 	color: black;
 	cursor: pointer;
 }
+.content{
+	transition: 0.3s linear;
+	height: 100%;
+	transform: translateX(0%);
+	background-color: white;
+}
 .container{
 	position: fixed;
 	width: 100%;
@@ -49,7 +71,7 @@ body{
 	background-color: white;
 	top:0;
 	left: 0;
-	visibility: hidden; /* hides sub-menu */	
+	visibility: hidden; 	
 	transform: translateY(-100%);
 	transition: 0.3s , visibility 0s linear 0.3s;
 }
@@ -143,3 +165,113 @@ body{
 .portofolio-logo img{
 	width: 190px
 }
+
+@media only screen and (max-width: 768px){
+	.nav ul{
+		position: absolute;
+		height: 100%;
+		margin-top: -10px;
+		padding-top: 20px;
+		padding-right: 20px;
+		top: 0;
+		right: 0;
+		justify-content: flex-start;
+		flex-direction: column;
+		background-color: white;
+		z-index: -1;
+	}
+	.nav ul div{
+		text-align: right;
+		padding-right: 0px;
+		font-size: 28pt;
+	}
+	.nav ul div i {
+		cursor: pointer;
+	}
+	.nav ul li{
+		font-size: 18pt;
+	}
+	.bar{
+		display: flex;
+		font-size: 16pt;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.bar div{
+		cursor: pointer
+	}
+	.bar i{
+		font-size: 24pt
+	}
+	.bar img{
+		width: 50px;
+		height: 45px;
+	}
+	.home-row{
+		flex-direction: column;
+	}
+	.home-side{
+		padding: 50px 0px;
+		background-color: white
+	}
+	.home-content{
+		font-size: 14pt;
+		font-weight: normal;
+		justify-content: flex-start;
+		padding-top: 1px;
+		flex: 1
+	}
+	.home-logo img{
+		width: 30%;
+	}
+	.home-font{
+		font-size: 24pt
+	}
+	.submenu-content{
+		flex-wrap: wrap;
+	}
+	.submenu-container{
+		flex-basis: 50%;
+		padding: 40px 0px;
+		width: auto;
+		height: auto;
+	}
+	.submenu-title{
+		margin: 0px 20px;
+		font-size:12pt;
+		padding: 5px;
+	}
+	.submenu-ikon{
+		margin: 20px auto;
+		width: 25px;
+		height: 25px;
+		padding: 20px;
+		font-size: 16pt;
+	}
+	.submenu-footer{
+		margin-top: 0px;
+		padding-top: 0px; 
+		font-size: 12pt;
+	}
+	.submenu-header{
+		font-size: 18pt;
+	}
+	.portofolio-bg{
+		flex-grow: 1;
+		flex-basis: 50%;
+		height: 50%;
+	}
+	.portofolio-content{
+		padding: 15px 0px;
+	}
+	.portofolio-title{
+		font-size: 12pt;
+	}
+	.portofolio-btn{
+		padding: 15px 25px;
+		font-size: 12pt;
+	}
+	.portofolio-logo img{
+		width: 120px
+	}
+} 
