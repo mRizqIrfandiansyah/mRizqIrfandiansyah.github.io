@@ -6,7 +6,7 @@ body{
 	font-family: 'cooltevica';
 }
 .bar{
-	display: block;
+	display: none;
 	padding: 20px;
 	background-color: white;
 	font-size: 24pt;
@@ -184,7 +184,7 @@ body{
 		z-index: -1;
 	}
 	.nav ul div{
-		display: block;
+		display: none;
 		text-align: right;
 		padding-right: 0px;
 		font-size: 28pt;
