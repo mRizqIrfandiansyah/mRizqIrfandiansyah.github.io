@@ -184,7 +184,7 @@ body{
 		z-index: -1;
 	}
 	.nav ul div{
-		display: none;
+		display: block;
 		text-align: right;
 		padding-right: 0px;
 		font-size: 28pt;
